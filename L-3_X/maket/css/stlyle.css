@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  /* убрали точки */
+  text-transform: uppercase;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 900;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 500px;
+}
+
+#about h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+}
+
+#about h2 span {
+  color: #005fa3;
+  display: flex;
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(2, 255px);
+  grid-template-rows: repeat(2, 255px);
+  gap: 30px;
+}
+
+.item {
+  background-color: #ebebeb;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.achievements :hover {
+  background-color: #005fa3;
+}
+
+.value {
+  font-weight: 900;
+  font-size: 55px;
+}
