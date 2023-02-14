@@ -1,42 +1,46 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.wrapper {
+.wrapper{
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .subheader {
-  color: #bdbdbd;
+  color: #BDBDBD;
   font-size: 24px;
   font-weight: 900;
   margin-bottom: 40px;
 }
 
-nav {
+nav{
   display: flex;
   justify-content: space-between;
   height: 100px;
   align-items: center;
 }
 
-nav ul {
+nav ul{
   display: flex;
   gap: 60px;
   list-style: none;
   text-transform: uppercase;
 }
 
-nav ul a {
+nav ul a{
   text-decoration: none;
   color: #222222;
   font-weight: 900;
 }
 
-#about {
+.wrapper .fa-bars {
+  display: none;
+}
+
+#about{
   padding: 140px 0;
 }
 
@@ -52,20 +56,20 @@ h2 {
   line-height: 69px;
 }
 
-#about h2 span {
-  color: #005fa3;
+#about h2 span{
+  color: #005FA3;
   display: block;
 }
 
-#about .achievements {
+#about .achievements{
   display: grid;
   grid-template-columns: repeat(2, 255px);
-  grid-template-rows: repeat(2, 255px);
+  grid-auto-rows: 255px;
   gap: 20px;
 }
 
-#about .achievements .item {
-  background: #ebebeb;
+#about .achievements .item{
+  background: #EBEBEB;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -74,24 +78,24 @@ h2 {
 
 #about .achievements .item:hover {
   color: white;
-  background-color: #005fa3;
+  background-color: #005FA3;
 }
 
 #about .achievements .item a {
-  color: #005fa3;
+  color: #005FA3;
 }
 
 #about .achievements .item:hover a {
-  color: white;
+  color: white
 }
 
-.item .value {
+.item .value{
   font-weight: 900;
   font-size: 55px;
 }
 
 #services {
-  background-color: #ebebeb;
+  background-color: #EBEBEB;
   padding: 140px 0;
 }
 
@@ -106,11 +110,13 @@ h2 {
 }
 
 .services_container div {
-  background-image: url("../media/service_background.png");
+  background-image: url('../media/service_background_full.png');
   display: flex;
   align-items: end;
   padding: 45px;
   position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
 #services h2 {
@@ -118,10 +124,10 @@ h2 {
 }
 
 .services_container div:hover::before {
-  content: "";
+  content: '';
   background-color: rgba(0, 95, 163, 0.65);
   height: 360px;
-  width: 350px;
+  width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -135,17 +141,15 @@ h2 {
 }
 
 #contacts {
-  background-image: url("../media/Rectangle.png");
+  background-image: url('../media/contacts_back.png');
   color: white;
   padding: 122px 0 140px 0;
 }
-#contacts div {
-  /* display: flex; */
-}
+
 #contacts a {
   color: white;
   text-decoration: none;
-  font-style: 21px;
+  font-size: 21px;
 }
 
 #contacts .wrapper {
@@ -155,12 +159,11 @@ h2 {
 
 #contacts .wrapper div div {
   display: flex;
-  justify-content: space-between;
-
-  /* gap: 40px; */
+  gap: 40px;
 }
+
 #contacts i {
-  margin: 15px;
+  margin-right: 15px;
   font-size: 25px;
 }
 
@@ -191,12 +194,12 @@ h2 {
 }
 
 #contacts form > label {
-  margin: 35px 0 50px 0;
   display: block;
+  margin: 35px 0 50px 0;
 }
 
 #contacts form button {
-  background-color: #005fa3;
+  background-color: #005FA3;
   padding: 19px 18px;
   color: white;
   border-color: transparent;
@@ -214,13 +217,49 @@ h2 {
 }
 
 .footer {
-  background-color: #e5e5e5;
+  background-color: #E5E5E5;
 }
 
 .footer .wrapper {
   display: flex;
   justify-content: space-between;
   padding: 50px 0 40px 0;
-  font-style: 13px;
+  font-size: 13px;
   font-weight: 300;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    max-width: 600px;
+  }
+
+  .wrapper .fa-bars {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .services_container {
+    grid-template-columns: 1fr;
+  }
+
+  #about > div {
+    grid-template-columns: 1fr;
+  }
+
+  #about .achievements {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 120px;
+  }
+
+  #about .achievements .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

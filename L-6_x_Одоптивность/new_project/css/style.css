@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#offers_container .offers {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 10px;
+}
+
+#offers_container .item {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+#offers_container .item img {
+  width: 100%;
+  height: 100%;
+}
+#offers_container .item p {
+  padding: 10px;
+  background-color: #00868a;
+}

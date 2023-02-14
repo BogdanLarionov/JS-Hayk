@@ -41,6 +41,8 @@ nav ul a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 500px;
+  gap: 40px;
+  padding: 140px 0;
 }
 
 #about h2 {
@@ -51,7 +53,7 @@ nav ul a {
 
 #about h2 span {
   color: #005fa3;
-  display: flex;
+  display: block;
 }
 
 .achievements {
@@ -59,6 +61,7 @@ nav ul a {
   grid-template-columns: repeat(2, 255px);
   grid-template-rows: repeat(2, 255px);
   gap: 30px;
+  padding: 140px 0;
 }
 
 .item {
@@ -71,6 +74,15 @@ nav ul a {
 
 .achievements :hover {
   background-color: #005fa3;
+  color: white;
+}
+
+#about .item a {
+  color: #005fa3;
+}
+
+#about .item:hover a {
+  color: white;
 }
 
 .value {
@@ -95,11 +107,6 @@ nav ul a {
   position: relative;
 }
 
-/* .service_container p {
-  font-size: 24px;
-  font-weight: 900;
-} */
-
 .service_container div:hover::before {
   content: "";
   background-color: rgba(0, 95, 163, 0.65);
@@ -117,4 +124,11 @@ nav ul a {
 
 #services h2 {
   margin-bottom: 102px;
+}
+
+.info p:last-child {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 60px;
+  max-width: 455px;
 }
