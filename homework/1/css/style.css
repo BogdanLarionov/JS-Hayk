@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background: #f4f9e2;
+  padding: 10px;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.nav_menu img {
+  cursor: pointer;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav_menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav_menu ul li {
+  list-style-type: none;
+}
+
+.nav_menu ul li a:hover {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.nav_menu button {
+  background: #f9b640;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-family: "ABeeZee";
+  font-style: italic;
+}
+.velozar_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.velozavr_text h1 {
+  color: #22356f;
+  margin-top: 126px;
+  font-weight: 400;
+  font-size: 39px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+}
+
+.velozavr_text p {
+  margin: 46px 0 165px 0;
+  width: 602px;
+  height: 277px;
+  height: 277px;
+
+  font-family: "ABeeZee", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+
+  color: #22356f;
+}
+
+.velozavr_img {
+  background-image: url("../media/din\ 1.png");
+  background-size: cover;
+  width: 443px;
+  height: 433px;
+}
+
+.offers_section {
+  background: #62d0df;
+}
+
+.wrapper_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blue_container h2 {
+  color: #ffffff;
+  margin: 131px 0 30px 0;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.blue_container p {
+  color: #ffffff;
+  width: 586px;
+  height: 270px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 128px;
+}
+
+.img_bike {
+  background-image: url("../media/image\ 1.png");
+  width: 520px;
+  height: 604px;
+}
+
+.customer_text {
+  background: #ffffff;
+  width: 1440px;
+  height: 633px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer_text p {
+  color: #22356f;
+  width: 739px;
+  height: 243.46px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+}
+
+.service {
+  background: #ffffff;
+}
+
+.wrapper_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service .inspection {
+  width: 380px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.line {
+  border-bottom: 2px solid white;
+  width: 80%;
+}
+
+.text p {
+  color: #ffffff;
+  margin: 30px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 34px;
+  display: block;
+}
+
+.dark_blue {
+  background: #22356f;
+}
+
+.blue {
+  background: #0052c1;
+}
+
+.green {
+  background: #76b58b;
+}
+
+.rent_section {
+  background-color: #ffffff;
+}
+
+.white_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bike_img {
+  background-image: url("../media/linkedin-sales-navigator-402831.png");
+  width: 520px;
+  height: 504px;
+}
+
+.text_conteiner {
+  display: flex;
+  flex-direction: column;
+  margin: 43px;
+}
+
+.white_container h2 {
+  color: #22356f;
+  font-family: "ABeeZee", sans-serif;
+  width: 361px;
+  height: 51px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 28px;
+}
+
+.white_container p {
+  color: #22356f;
+  width: 361px;
+  height: 51px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 28px;
+}
