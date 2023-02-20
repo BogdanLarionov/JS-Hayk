@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+header {
+  min-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../media/main-screen__bgc.png");
+  /* height: 4854px; */
+  background-repeat: no-repeat;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px 0 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav button {
+  padding: 10px 30px;
+  width: 183px;
+  height: 44px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.sub_header {
+  padding-top: 190px;
+  width: 740px;
+}
+
+.sub_header h1 {
+  color: #ffffff;
+  width: 900px;
+  height: 180px;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 140%;
+  margin-bottom: 50px;
+}
+
+.black_items {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.black_items .item {
+  text-align: center;
+  background: #121212;
+  padding: 20px 30px;
+  width: 115px;
+  height: 112px;
+  color: white;
+  border: none;
+  margin-bottom: 240px;
+}
+
+.black_items .item p:first-child {
+  font-family: "Roboto Flex", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.black_items .item p:last-child {
+  color: #717171;
+}
+
+.substrate {
+  background: #121212;
+  width: 1920px;
+  height: 130px;
+}
+
+.substrate .substrate_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+}
+
+.substrate .attiatic_substrate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  color: #717171;
+}
+
+.substrate .attiatic_substrate p:nth-child(2),
+p:nth-child(4) {
+  color: white;
+}
+
+.substrate button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  width: 169px;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+
+  /* text-button */
+  color: #ffffff;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
