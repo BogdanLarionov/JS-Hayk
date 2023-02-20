@@ -10,8 +10,8 @@
   user-select: none;
 }
 
-header {
-  min-width: 1920px;
+main {
+  max-width: 1920px;
   margin: 0 auto;
   background-image: url("../media/main-screen__bgc.png");
   /* height: 4854px; */
@@ -20,7 +20,7 @@ header {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -98,15 +98,13 @@ nav button {
 
 .substrate {
   background: #121212;
-  width: 1920px;
-  height: 130px;
 }
 
 .substrate .substrate_section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 45px;
+  padding: 45px 0 45px 0;
 }
 
 .substrate .attiatic_substrate {
@@ -135,4 +133,35 @@ p:nth-child(4) {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 700;
   font-size: 15px;
+}
+
+.about_us_section {
+  background-color: #020202;
+  color: white;
+  padding: 30px 10px 0 10px;
+  display: flex;
+}
+
+.about_us_section .wrapper_container {
+  display: flex;
+}
+
+.about_us_section img {
+  margin-top: 100px;
+  width: 350px;
+  height: 400px;
+}
+
+.about_us_section .wrapper_container .text_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_us_section .wrapper_container .text_section h2 {
+  margin: 150px 0 50px 150px;
+}
+
+.about_us_section .wrapper_container .text_section p {
+  margin: 30px 20px 50px 30px;
+  width: 600px;
 }
