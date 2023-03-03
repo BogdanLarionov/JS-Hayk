@@ -25,7 +25,7 @@ price_input.setAttribute("name", "price");
 
 add_product_form.append(product_input, price_input, form_btn);
 
-const products = [];
+let products = [];
 
 add_product_form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -45,7 +45,7 @@ add_product_form.addEventListener("submit", function (event) {
 function render_cards() {
   products_container.innerText = ""; // очистка
 
-  products.forEach(function ({ product, price, quantity }) {
+  products.forEach(function ({ id, product, price, quantity }) {
     const cardElem = document.createElement("div");
     const titleElem = document.createElement("p");
     const priceElem = document.createElement("p");
@@ -65,6 +65,13 @@ function render_cards() {
 
     cardElem.style.backgroundColor = price <= 1000 ? "lightgreen" : "lightpink";
     // -цвет;
+
+    cardElem.addEventListener("click", function () {
+      products = products.filter(function (el) {
+        return el.id !== id;
+      });
+      render_cards();
+    });
 
     cardElem.append(titleElem, priceElem, quantityElem);
     products_container.append(cardElem);
